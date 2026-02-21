@@ -34,6 +34,21 @@
           display: flex;
           align-items: center;
         }
+        #header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          display: flex;
+          justify-content: center;
+        }
+        #header-content {
+          background-color: white;
+          margin-top: 1.5rem;
+          padding: 0.5rem;
+          border-radius: 8px;
+        }
       </style>
   </head>
 
@@ -45,6 +60,11 @@
       <div class="key-row"><span class="key-color" style="background-color: #ff7800;"></span>Moderate</div>
       <div class="key-row"><span class="key-color" style="background-color: #d50202;"></span>Severe</div>
       <div class="key-row"><span class="key-color" style="background-color: #8e0057;"></span>Extreme</div>
+    </div>
+    <div id="header">
+      <div id="header-content">
+        Live Turbulence Map by Jake
+      </div>
     </div>
     <script type="application/javascript" src="./index.js"></script>
     <script>
